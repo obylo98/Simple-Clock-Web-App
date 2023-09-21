@@ -1,0 +1,51 @@
+/* Common styles for all screen sizes */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #0066ff, #33ccff);
+    font-family: Arial, sans-serif;
+}
+
+.clock {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+#time {
+    font-family: "Digital-7";
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 576px) {
+    .clock {
+        font-size: 1.5rem;
+        padding: 10px;
+        letter-spacing: 2px;
+    }
+}
+
+/* Responsive styles for tablet screens */
+@media (min-width: 577px) and (max-width: 1024px) {
+    .clock {
+        font-size: 2rem;
+        padding: 15px;
+        letter-spacing: 3px;
+    }
+}
+
+/* Responsive styles for desktop screens */
+@media (min-width: 1025px) {
+    .clock {
+        font-size: 3rem;
+        padding: 20px;
+        letter-spacing: 4px;
+    }
+}
